@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: white; color: black;">
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid" style="background-color: white; color: black;">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol>
+
+      <div>
+        <input id="night_day1" type="button" value="night" onclick="
+          var target = document.querySelector('body');
+          if(this.value == 'day'){
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
+          } else {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
+          }
+          ">
+        <input type="button" value="night" onclick="
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
+                                                    ">
+        <input type="button" value="day" onclick="
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black'; 
+                                                  ">
+        
+        <h2>WEB</h2>
+        <img src="https://plus.unsplash.com/premium_photo-1666536060536-f328f4a9b6d9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2670&amp;q=80" width="30%">
+        <p id="p1">
+          The World Wide Web (WWW), commonly known as the <span>Web</span>, is an information
+          system enabling documents and other web resources to be accessed over
+          the Internet.[1]
+        </p>
+        <p id="p1">
+          Documents and downloadable media are made available to the network
+          through web servers and can be accessed by programs such as web
+          browsers. Servers and resources on the World Wide <span id="Web" class="web">Web</span> are identified
+          and located through character strings called uniform resource
+          locators(URLs). The original and still very common document type is a
+          web page formatted in Hypertext Markup Language (HTML). This markup
+          language supports plain text, images, embedded video and audio
+          contents, and scripts (short programs) that implement complex user
+          interaction. The HTML language also supports hyperlinks (embedded
+          URLs) which provide immediate access to other web resources. <span class="web">Web</span>
+          navigation, or web surfing, is the common practice of following such
+          hyperlinks across multiple websites. <span class="web">Web</span> applications are web pages
+          that function as application software. The information in the Web is
+          transferred across the Internet using the Hypertext Transfer Protocol
+          (HTTP).
+        </p>
+        <input id="night_day2" type="button" value="night" onclick="
+          var target = document.querySelector('div');
+          if(this.value == 'day'){
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
+          } else {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
+          }
+          ">
+          <input type="button" value="Hide text" 
+          onclick="document.getElementById('p1').style.visibility='hidden'">
+          <input type="button" value="Show text"
+onclick="document.getElementById('p1').style.visibility='visible'">
+
+      
+    </div>
+
+
+
+    
+</body>
+</html>
